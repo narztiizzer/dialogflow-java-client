@@ -33,7 +33,7 @@
 						</goals>
 						<phase>integration-test</phase>
 						<configuration>
-							<skipTests>${skipIntegrationTests}</skipTests>
+							<skipTests>true</skipTests>
 							<includes>
 								<include>**/AllFunctionalTests.java</include>
 							</includes>

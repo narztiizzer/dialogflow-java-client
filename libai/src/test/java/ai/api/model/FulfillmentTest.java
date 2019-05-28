@@ -83,7 +83,7 @@ public class FulfillmentTest {
     assertEquals(1, fulfillment.getContextOut().size());
     AIOutputContext context = fulfillment.getContext("weather");
     assertEquals("weather", context.getName());
-    assertEquals(2, context.getLifespan());
+    assertEquals(2, context.getLifespan().intValue());
 
     assertEquals(1, context.getParameters().size());
     assertEquals("Rome", context.getParameters().get("city").getAsString());

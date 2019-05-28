@@ -239,7 +239,8 @@ public class AIConfiguration implements Cloneable {
     PortugueseBrazil("pt-BR"),
     Russian("ru"),
     Spanish("es"),
-    Ukrainian("uk");
+    Ukrainian("uk"),
+    Thai("th-TH", "th");
 
     /**
      * Default language value

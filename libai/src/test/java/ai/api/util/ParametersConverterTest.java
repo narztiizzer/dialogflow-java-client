@@ -120,9 +120,9 @@ public class ParametersConverterTest {
 	@Test
 	public void parseKnownPartialDateTest() throws ParseException {
 		PartialDate date = ParametersConverter.parsePartialDate("2015-03-21");
-		assertEquals(2015, date.get(Calendar.YEAR));
-        assertEquals(Calendar.MARCH, date.get(Calendar.MONTH));
-        assertEquals(21, date.get(Calendar.DATE));
+		assertEquals(2015, date.get(Calendar.YEAR).intValue());
+        assertEquals(Calendar.MARCH, date.get(Calendar.MONTH).intValue());
+        assertEquals(21, date.get(Calendar.DATE).intValue());
 	}
 
     @Test
